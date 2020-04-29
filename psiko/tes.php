@@ -25,7 +25,7 @@ $pertanyaan_18 = $_POST['pertanyaan_18'];
 $sql = "INSERT INTO tes VALUES ( NULL,'$id_user','$pertanyaan_1' , '$pertanyaan_2', '$pertanyaan_3', '$pertanyaan_4', '$pertanyaan_5', '$pertanyaan_6', '$pertanyaan_7', '$pertanyaan_8', '$pertanyaan_9', '$pertanyaan_10', '$pertanyaan_11', '$pertanyaan_12', '$pertanyaan_13', '$pertanyaan_14', '$pertanyaan_15', '$pertanyaan_16', '$pertanyaan_17', '$pertanyaan_18')";
 $query = mysqli_query($db , $sql);
 
-// apakah query update berhasil ?
+// apakah query sudah berhasil ?
 if ($query) {
   echo "MANTAP";
 } else {

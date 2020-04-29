@@ -62,6 +62,17 @@
         android:layout_gravity="center_horizontal"
         android:background="#fff"
         android:hint="Password"/>
+
+        <TextView
+            android:id="@+id/txttes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.771" />
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="50dp"
@@ -79,6 +90,7 @@
                 android:gravity="center"/>
         </androidx.cardview.widget.CardView>
         <TextView
+            android:id="@+id/register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
