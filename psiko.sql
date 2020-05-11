@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 20 Apr 2020 pada 09.20
+-- Waktu pembuatan: 05 Bulan Mei 2020 pada 05.59
 -- Versi server: 10.3.16-MariaDB
 -- Versi PHP: 7.3.6
 
@@ -34,6 +34,13 @@ CREATE TABLE `hasil_tes` (
   `skor_tes` varchar(255) NOT NULL,
   `penanganan` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `hasil_tes`
+--
+
+INSERT INTO `hasil_tes` (`id_hasil`, `id_tes`, `skor_tes`, `penanganan`) VALUES
+(1, 1, '200', 'berat');
 
 -- --------------------------------------------------------
 
@@ -120,7 +127,9 @@ CREATE TABLE `tes` (
 INSERT INTO `tes` (`id_tes`, `id_user`, `pertanyaan_1`, `pertanyaan_2`, `pertanyaan_3`, `pertanyaan_4`, `pertanyaan_5`, `pertanyaan_6`, `pertanyaan_7`, `pertanyaan_8`, `pertanyaan_9`, `pertanyaan_10`, `pertanyaan_11`, `pertanyaan_12`, `pertanyaan_13`, `pertanyaan_14`, `pertanyaan_15`, `pertanyaan_16`, `pertanyaan_17`, `pertanyaan_18`) VALUES
 (3, 1, 'ya', 'tidak', 'ya', 'tidak', 'ya', '', 'tidak', 'tidak', 'tidak', 'ya', 'ya', 'ya', 'tidak', 'tidak', 'ya', 'tidak', 'ya', 'ya'),
 (4, 1, 'ya', 'tidak', 'ya', 'tidak', 'ya', '', 'tidak', 'tidak', 'tidak', 'ya', 'ya', 'ya', 'tidak', 'tidak', 'ya', 'tidak', 'ya', 'ya'),
-(5, 1, 'ya', 'tidak', 'ya', 'tidak', 'ya', 'tidak', 'tidak', 'tidak', 'ya', 'ya', 'ya', 'tidak', 'tidak', 'ya', 'tidak', 'ya', 'ya', 'tidak');
+(5, 1, 'ya', 'tidak', 'ya', 'tidak', 'ya', 'tidak', 'tidak', 'tidak', 'ya', 'ya', 'ya', 'tidak', 'tidak', 'ya', 'tidak', 'ya', 'ya', 'tidak'),
+(6, 0, 'tidak', 'ya', '', 'tidak', 'ya', 'tidak', 'tidak', 'tidak', 'ya', 'ya', 'ya', 'tidak', 'tidak', 'ya', 'tidak', 'ya', 'ya', 'tidak'),
+(7, 0, 'tidak', 'ya', 'tidak', 'ya', 'tidak', 'tidak', 'tidak', 'ya', 'ya', 'ya', 'tidak', 'tidak', 'ya', 'tidak', 'ya', 'ya', 'tidak', 'ya');
 
 -- --------------------------------------------------------
 
@@ -140,11 +149,16 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `nama`, `gmail`, `password`) VALUES
-(1, 'mbok', 'mbok@gmail.com', '123'),
-(2, 'mbok', 'mbok@gmail.com', '123'),
-(3, 'mbok', 'mbok@gmail.com', '123'),
-(4, 'mbok', 'mbok@gmail.com', '123'),
-(5, 'abyan', 'abyan@gmail.com', '123');
+(1, 'abyan', 'abyan@gmail.com', '123'),
+(2, 'aura', 'aura@gmail.com', '1234'),
+(3, 'rifqi', 'rifqi@gmail.com', '12'),
+(4, 'sania', 'sania@gmail.com', '333'),
+(5, 'luthfi', 'luthfi@gmail.com', '444'),
+(6, 'Hidananta', 'hidananta@gmail.com', '123'),
+(7, 'mbok', 'mbok@gmail.com', '123'),
+(8, '', '', ''),
+(9, 'aldo', 'aldo@gmail.com', '123'),
+(10, '', '', '');
 
 --
 -- Indexes for dumped tables
@@ -202,7 +216,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `hasil_tes`
 --
 ALTER TABLE `hasil_tes`
-  MODIFY `id_hasil` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_hasil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `info_psikosomatis`
@@ -232,23 +246,13 @@ ALTER TABLE `tenaga_medis`
 -- AUTO_INCREMENT untuk tabel `tes`
 --
 ALTER TABLE `tes`
-  MODIFY `id_tes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_tes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
---
-
---
--- Ketidakleluasaan untuk tabel `tes`
---
-ALTER TABLE `tes`
-  ADD CONSTRAINT `tes_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`);
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

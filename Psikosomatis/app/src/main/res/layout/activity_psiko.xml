@@ -14,42 +14,44 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:cardBackgroundColor="#ededed"
-        app:cardCornerRadius="10dp">
+        app:cardBackgroundColor="#448985">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/fredoka_one"
             android:text="Definisi"
             android:textSize="20dp"
-            android:textColor="#000"/>
+            android:textColor="#FFFFFF"/>
     </androidx.cardview.widget.CardView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#000"
             android:text="Psikosomatis terdiri dari dua kata, pikiran (psyche) dan tubuh (soma). Gangguan psikosomatis adalah penyakit yang melibatkan pikiran dan tubuh, di mana pikiran memengaruhi tubuh hingga penyakit muncul atau menjadi bertambah parah.  Istilah gangguan psikosomatis digunakan untuk menyatakan keluhan fisik yang diduga disebabkan atau diperparah oleh faktor psikis atau mental, seperti stres dan rasa cemas."/>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
-            app:cardBackgroundColor="#f8e8eb"
-            app:cardCornerRadius="10dp">
+            app:cardBackgroundColor="#448985">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
+                android:fontFamily="@font/fredoka_one"
                 android:text="Gejala"
                 android:textSize="20dp"
-                android:textColor="#000"/>
+                android:textColor="#FFFFFF"/>
         </androidx.cardview.widget.CardView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:textColor="@android:color/background_dark"
             android:layout_marginLeft="20dp"
             android:text="Detak jantung kencang atau cepat"/>
         <TextView
@@ -57,16 +59,19 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#000"
             android:text="Telapak tangan berkeringat"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#000"
             android:text="Otot tegang"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#000"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
             android:text="Mulut kering"/>
@@ -74,24 +79,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:textColor="#000"
             android:layout_marginLeft="20dp"
             android:text="Tremor"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:textColor="#000"
             android:layout_marginLeft="20dp"
             android:text="Sensasi kupu-kupu di perut"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:textColor="#000"
             android:layout_marginLeft="20dp"
             android:text="Mudah marah"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:textColor="#000"
             android:layout_marginLeft="20dp"
             android:text="Menyendiri"/>
         <TextView
@@ -99,11 +108,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#000"
             android:text="Tekanan darah meningkat"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:textColor="#000"
             android:layout_marginLeft="20dp"
             android:text="Sulit tidur"/>
         <TextView
@@ -111,31 +122,34 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#000"
             android:text="Gangguan pencernaan"/>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
-            app:cardBackgroundColor="#c2eae9"
-            app:cardCornerRadius="10dp">
+            app:cardBackgroundColor="#448985">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
+                android:fontFamily="@font/fredoka_one"
                 android:text="Cara Mengatasi"
                 android:textSize="20dp"
-                android:textColor="#000"/>
+                android:textColor="#FFFFFF"/>
         </androidx.cardview.widget.CardView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:textColor="#000"
             android:layout_marginLeft="20dp"
             android:text="Psikoterapi, salah satunya dengan metode terapi kognitif perilaku"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#000"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
             android:text="Latihan relaksasi / meditasi"/>
@@ -144,13 +158,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#000"
             android:text="Akupuntur"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
-            android:text="Hipnosis / hipnoterapi"/>
+            android:text="Hipnosis / hipnoterapi"
+            android:textColor="#000"/>
     </LinearLayout>
 
 </LinearLayout>
+
+

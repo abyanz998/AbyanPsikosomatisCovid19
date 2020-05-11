@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".hasil">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/satu"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/dua"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/tiga"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/empat"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/lima"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/enam"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/tujuh"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+
+        <EditText
+            android:id="@+id/delapan"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/sembilan"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/idd"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+
+        <TextView
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="SKOR ANDA DIBAWAH INI :"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+
+        <TextView
+            android:id="@+id/tampilskor"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="HASIL SKOR"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/sepuluh"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/sebelas"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/duabelas"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/tigabelas"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/empatbelas"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/limabelas"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/enambelas"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+
+        <EditText
+            android:id="@+id/tujuhbelas"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <EditText
+            android:id="@+id/delapanbelas"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+
+        <TextView
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="PSIKOSOMATIS ANDA TERHADAP WABAH COVID-19 "
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+
+        <TextView
+            android:id="@+id/tampilkategor"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="TIPE PSIKOSOMATIS"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+
+        <Button
+            android:id="@+id/solusi"
+            android:layout_width="wrap_content"
+            android:text="CEK SOLUSI DISINI"
+            android:layout_height="wrap_content"
+            android:textColorHint="#1A951F"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
