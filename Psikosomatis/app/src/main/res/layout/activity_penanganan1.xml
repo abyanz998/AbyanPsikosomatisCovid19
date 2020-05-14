@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".Penanganan1">
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:src="@drawable/musik"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-30dp"
+        app:cardBackgroundColor="#c4dedc">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#448985"
+                android:text="Kamu masuk dalam kategori : PSIKOSOMATIS RINGAN"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#448985"
+                android:textStyle="bold"
+                android:text="Berikut beberapa saran yang dapat dilakukan : "
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#448985"
+                android:textStyle="bold"
+                android:text="1. Selalu berpikir positif"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#448985"
+                android:textStyle="bold"
+                android:text="2. Istirahat yang cukup dengan tidur 6-8 jam"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#448985"
+                android:textStyle="bold"
+                android:text="3. Konsumsi makanan yang sehat"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#448985"
+                android:textStyle="bold"
+                android:text="4. Olahraga 3 kali dalam seminggu"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#448985"
+                android:textStyle="bold"
+                android:text="5. Selalu berpikir positif"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#448985"
+                android:textStyle="bold"
+                android:text="6. Hindari atau kelola stress dengan baik"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#448985"
+                android:textStyle="bold"
+                android:text="7. Berbagi dengan orang lain saat mempunyai masalah"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

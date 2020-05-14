@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="-30dp"
+            app:cardBackgroundColor="#448985"
+            app:cardCornerRadius="30dp">
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="#448985"
+            app:cardCornerRadius="30dp">
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/definisi"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#448985"
+            android:textStyle="bold"
+            android:text="DEFINISI :"
+            android:textSize="24dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Psikosomatis terdiri dari dua kata, pikiran (psyche) dan tubuh (soma). Gangguan psikosomatis adalah penyakit yang melibatkan pikiran dan tubuh, di mana pikiran memengaruhi tubuh hingga penyakit muncul atau menjadi bertambah parah.  Istilah gangguan psikosomatis digunakan untuk menyatakan keluhan fisik yang diduga disebabkan atau diperparah oleh faktor psikis atau mental, seperti stres dan rasa cemas."
+            android:textColor="#448985"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Sedangkan dalam istilah psikologi, psikosomatis atau penyakit fungsional merupakan kondisi yang menyebabkan rasa sakit dan masalah pada fungsi tubuh, walaupun tidak ditemukan kelainan pada pemeriksaan fisik, maupun pemeriksaan penunjang seperti Rontgen atau tes darah."
+            android:textColor="#448985"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

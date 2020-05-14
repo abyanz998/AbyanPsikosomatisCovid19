@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".hasil">
+
+        <TextView
+            android:id="@+id/idd"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="NAMA ANDA"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="KATEGORI PSIKOSOMATIS WABAH COVID-19 "
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/tampilskor"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="HASIL SKOR"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/tampiltes"-->
+<!--        android:width="200dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_column="2"-->
+<!--        android:text="ID TES"-->
+<!--        android:layout_marginStart="20sp"-->
+<!--        android:layout_marginLeft="20sp" />-->
+
+        <TextView
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="PSIKOSOMATIS ANDA TERHADAP WABAH COVID-19 "
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:id="@+id/tampilkategor"
+            android:width="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="TIPE PSIKOSOMATIS"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+
+    <TextView
+        android:width="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:text="BAGAIMANA PUN JUGA PSIKOSOMATIS DAPAT MENURUNKAN IMUNITAS ANDA, yuk cek solusinya dibawah ini"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="50dp"/>
+
+        <Button
+            android:id="@+id/solusi"
+            android:layout_width="wrap_content"
+            android:text="CEK SOLUSI DISINI"
+            android:layout_height="wrap_content"
+            android:textColorHint="#1A951F"
+            android:layout_marginTop="40dp"
+            />
+
+</LinearLayout>

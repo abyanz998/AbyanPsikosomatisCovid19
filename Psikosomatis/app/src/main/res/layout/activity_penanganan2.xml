@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".Penanganan2">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:src="@drawable/olahraga"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Kamu masuk dalam kategori PSIKOSOMATIS SEDANG"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Jangan khawatir tetap tenang ya, anda bisa coba hubungi layanan SEJIWA dari Kemen PPPA Indonesia dengan klik tomBol dibawah ini "
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/dial_btn"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="HUBUNGI DISINI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Berikut beberapa tips yang bisa anda terapkan untuk mengurangi kecemasan dengan wabah COVID-19"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="1. Kurangi asupan informasi yang berikatan dengan wabah COVID-19"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="2. Jalin Hubungan lebih baik dengan orang terdekat anda, saling mensupport disaat keadaan sulit akan memberikan energi postiif"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="3. Lakukan relaksasi. Bisa dengan pendekatan spiritual maupun emosional. Ketika anda lebih tenang anda akan lebih mudah mengendalikan emosi negatif"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
