@@ -53,7 +53,7 @@ class Pertanyaan6 : AppCompatActivity() {
         val username = intent.getStringExtra("username")
         val password = intent.getStringExtra("password")
 
-        AndroidNetworking.post("http://192.168.43.68/psiko/ceklogin.php")
+        AndroidNetworking.post("https://psikosomatis.000webhostapp.com/ceklogin.php")
             .addBodyParameter("gmail", username)
             .addBodyParameter("password", password)
             .setPriority(Priority.MEDIUM)
@@ -154,7 +154,7 @@ class Pertanyaan6 : AppCompatActivity() {
         val sharedPreferences = getSharedPreferences("CEKLOGIN", Context.MODE_PRIVATE)
         val ID = sharedPreferences.getString("ID","")
 
-        AndroidNetworking.post("http://192.168.43.68/psiko/tes.php")
+        AndroidNetworking.post("https://psikosomatis.000webhostapp.com/tes.php")
             .addBodyParameter("id_user", ID)
             .addBodyParameter("pertanyaan_1", jawaban1)
             .addBodyParameter("pertanyaan_2", jawaban2)

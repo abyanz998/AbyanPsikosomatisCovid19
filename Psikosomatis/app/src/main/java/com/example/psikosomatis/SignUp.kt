@@ -54,7 +54,7 @@ class SignUp : AppCompatActivity() {
     fun postkerserver(nama:String,gmail:String,password:String)
     {
 
-        AndroidNetworking.post("http://192.168.43.68/psiko/register.php")
+        AndroidNetworking.post("https://psikosomatis.000webhostapp.com/register.php")
             .addBodyParameter("nama", nama)
             .addBodyParameter("gmail", gmail)
             .addBodyParameter("password", password)

@@ -31,7 +31,7 @@ class Penanganan3 : AppCompatActivity() {
             val alamat_psikolog = "JL Merdeka Barat No.15 DKI Jakarta"
             val nomor :String = phone.toString()
 
-            AndroidNetworking.post("http://192.168.43.68/psiko/tenaga_medis.php")
+            AndroidNetworking.post("https://psikosomatis.000webhostapp.com/tenaga_medis.php")
                 .addBodyParameter("id_hasil_tes", idtes4)
                 .addBodyParameter("nama_psikolog", nama_psikolog)
                 .addBodyParameter("alamat_psikolog", alamat_psikolog)

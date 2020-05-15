@@ -42,8 +42,7 @@ class SignIn : AppCompatActivity() {
 
             btn_login.setOnClickListener{
                 // jadi kan dia kalau diklik tombol start/login dia ngirim data ini ke postkerserver
-                // postkeserver disana nampilin datanya lho pakai select*from soalnya
-
+                // postkeserver disana nampilin datanya lho pakai select*from soalny
                 var username= TextUsername.text.toString()
                 var password= TextPassword.text.toString()
                 postkerserver(username,password)
@@ -54,7 +53,7 @@ class SignIn : AppCompatActivity() {
 
     fun postkerserver(username:String,password:String)
     {
-        AndroidNetworking.post("http://192.168.43.68/psiko/ceklogin.php")
+        AndroidNetworking.post("https://psikosomatis.000webhostapp.com/ceklogin.php")
             .addBodyParameter("gmail", username)
             .addBodyParameter("password", password)
             .setPriority(Priority.MEDIUM)

@@ -31,14 +31,14 @@ class hasil : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hasil)
-        
+
         val sharedPreferences = getSharedPreferences("CEKLOGIN", Context.MODE_PRIVATE)
         sharedPreferences.apply {
             val namaa = getString("NAMA", "")
             idd.setText(namaa)                                                                         // ini untuk menampilkan session setelah login
         }
 
-        AndroidNetworking.get("http://192.168.43.68/psiko/ambil_tes.php")
+        AndroidNetworking.get("hhttps://psikosomatis.000webhostapp.com/ambil_tes.php")
             .setPriority(Priority.MEDIUM)
             .build()
             .getAsJSONObject(object : JSONObjectRequestListener {
@@ -321,13 +321,13 @@ class hasil : AppCompatActivity() {
         val sharedPreferences = getSharedPreferences("TES", Context.MODE_PRIVATE)
         val  idtes = sharedPreferences.getString("IDTES","")
 
-        val tambah : Int = 1
-        val id = idtes?.toInt()
-        val nambah : Int = tambah + id!!
-        val bug : String = nambah.toString()
+//        val tambah : Int = 1
+//        val id = idtes?.toInt()
+//        val nambah : Int = tambah + id!!
+//        val bug : String = nambah.toString()
 
-        AndroidNetworking.post("http://192.168.43.68/psiko/hasil_tes.php")
-            .addBodyParameter("id_tes", bug)
+        AndroidNetworking.post("https://psikosomatis.000webhostapp.com/hasil_tes.php")
+            .addBodyParameter("id_tes", idtes)
             .addBodyParameter("skor_tes", persentase)
             .addBodyParameter("penanganan", kategori)
 

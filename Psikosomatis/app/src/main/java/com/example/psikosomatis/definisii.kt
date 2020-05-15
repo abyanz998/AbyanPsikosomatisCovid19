@@ -16,7 +16,7 @@ class definisii : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_definisii)
 
-        AndroidNetworking.get("http://192.168.43.68/psiko/infopsiko.php")
+        AndroidNetworking.get("https://psikosomatis.000webhostapp.com/infopsiko.php")
             .setPriority(Priority.MEDIUM)
             .build()
             .getAsJSONObject(object : JSONObjectRequestListener {

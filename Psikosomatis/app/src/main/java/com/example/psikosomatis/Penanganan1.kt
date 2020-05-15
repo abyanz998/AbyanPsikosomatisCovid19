@@ -24,7 +24,7 @@ class Penanganan1 : AppCompatActivity() {
         val sharedPreferences = getSharedPreferences("TES", Context.MODE_PRIVATE)
         val  idtes2 = sharedPreferences.getString("IDTES","")
 
-        AndroidNetworking.post("http://192.168.43.68/psiko/penanganan_ringan.php")
+        AndroidNetworking.post("https://psikosomatis.000webhostapp.com/penanganan_ringan.php")
             .addBodyParameter("id_hasil_tes", idtes2)
             .addBodyParameter("saran_pencegahan", saran)
             .setPriority(Priority.MEDIUM)
