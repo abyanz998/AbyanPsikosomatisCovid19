@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".mengatasii"></activity>
+        <activity android:name=".definisii" />
+        <activity android:name=".gejala" />
         <activity android:name=".dialog_tes" />
         <activity android:name=".Penanganan3" />
         <activity android:name=".Penanganan2" />

@@ -31,15 +31,15 @@
             android:layout_height="250dp"
             android:src="@drawable/definisi"/>
     </LinearLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="30dp"
-            android:textColor="#448985"
-            android:textStyle="bold"
-            android:text="DEFINISI :"
-            android:textSize="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#448985"
+        android:textStyle="bold"
+        android:text="DEFINISI :"
+        android:textSize="24dp"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,6 +53,7 @@
             android:textColor="#448985"
             android:textStyle="bold"/>
         <TextView
+            android:id="@+id/konten"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/bg2"
+    android:background="#448985"
     android:layout_height="match_parent">
 
     <ProgressBar
@@ -25,7 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="198dp"
         android:layout_marginEnd="198dp"
-        android:text="Sistem sedang menghitung .."
+        android:text="Sistem sedang menghitung..."
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
