@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 20 Apr 2020 pada 09.20
+-- Waktu pembuatan: 14 Bulan Mei 2020 pada 04.19
 -- Versi server: 10.3.16-MariaDB
 -- Versi PHP: 7.3.6
 
@@ -35,6 +35,15 @@ CREATE TABLE `hasil_tes` (
   `penanganan` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `hasil_tes`
+--
+
+INSERT INTO `hasil_tes` (`id_hasil`, `id_tes`, `skor_tes`, `penanganan`) VALUES
+(1, 1, '72.22222222222221', 'BERAT'),
+(2, 2, '72.22222222222221', 'BERAT'),
+(3, 3, '72.22222222222221', 'BERAT');
+
 -- --------------------------------------------------------
 
 --
@@ -45,6 +54,13 @@ CREATE TABLE `info_psikosomatis` (
   `id_konten` int(11) NOT NULL,
   `konten` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `info_psikosomatis`
+--
+
+INSERT INTO `info_psikosomatis` (`id_konten`, `konten`) VALUES
+(1, 'PSIKOSOMATIS ? Masyarakat pada umumnya hanya menitikberatkan sumber penyakit dari faktor biologis saja, seperti bakteri, kuman dan imunitas. Padahal faktor psikologi akan sangat berpengaruh pada penyakit ditubuh/organis ..');
 
 -- --------------------------------------------------------
 
@@ -84,6 +100,14 @@ CREATE TABLE `tenaga_medis` (
   `nomor_telepon` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `tenaga_medis`
+--
+
+INSERT INTO `tenaga_medis` (`id_medis`, `id_hasil_tes`, `nama_psikolog`, `alamat_psikolog`, `nomor_telepon`) VALUES
+(1, 1, 'KEMEN PPA', 'JL Merdeka Barat No.15 DKI Jakarta', '119'),
+(2, 2, 'KEMEN PPA', 'JL Merdeka Barat No.15 DKI Jakarta', '119');
+
 -- --------------------------------------------------------
 
 --
@@ -92,7 +116,7 @@ CREATE TABLE `tenaga_medis` (
 
 CREATE TABLE `tes` (
   `id_tes` int(11) NOT NULL,
-  `id_user` int(11) DEFAULT NULL,
+  `id_user` varchar(11) DEFAULT NULL,
   `pertanyaan_1` varchar(20) NOT NULL,
   `pertanyaan_2` varchar(20) NOT NULL,
   `pertanyaan_3` varchar(20) NOT NULL,
@@ -118,9 +142,9 @@ CREATE TABLE `tes` (
 --
 
 INSERT INTO `tes` (`id_tes`, `id_user`, `pertanyaan_1`, `pertanyaan_2`, `pertanyaan_3`, `pertanyaan_4`, `pertanyaan_5`, `pertanyaan_6`, `pertanyaan_7`, `pertanyaan_8`, `pertanyaan_9`, `pertanyaan_10`, `pertanyaan_11`, `pertanyaan_12`, `pertanyaan_13`, `pertanyaan_14`, `pertanyaan_15`, `pertanyaan_16`, `pertanyaan_17`, `pertanyaan_18`) VALUES
-(3, 1, 'ya', 'tidak', 'ya', 'tidak', 'ya', '', 'tidak', 'tidak', 'tidak', 'ya', 'ya', 'ya', 'tidak', 'tidak', 'ya', 'tidak', 'ya', 'ya'),
-(4, 1, 'ya', 'tidak', 'ya', 'tidak', 'ya', '', 'tidak', 'tidak', 'tidak', 'ya', 'ya', 'ya', 'tidak', 'tidak', 'ya', 'tidak', 'ya', 'ya'),
-(5, 1, 'ya', 'tidak', 'ya', 'tidak', 'ya', 'tidak', 'tidak', 'tidak', 'ya', 'ya', 'ya', 'tidak', 'tidak', 'ya', 'tidak', 'ya', 'ya', 'tidak');
+(1, '1', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
+(2, '1', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
+(3, '1', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya');
 
 -- --------------------------------------------------------
 
@@ -140,11 +164,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `nama`, `gmail`, `password`) VALUES
-(1, 'mbok', 'mbok@gmail.com', '123'),
-(2, 'mbok', 'mbok@gmail.com', '123'),
-(3, 'mbok', 'mbok@gmail.com', '123'),
-(4, 'mbok', 'mbok@gmail.com', '123'),
-(5, 'abyan', 'abyan@gmail.com', '123');
+(1, 'Aura Salsabila', 'aura20', '123');
 
 --
 -- Indexes for dumped tables
@@ -202,13 +222,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `hasil_tes`
 --
 ALTER TABLE `hasil_tes`
-  MODIFY `id_hasil` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_hasil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `info_psikosomatis`
 --
 ALTER TABLE `info_psikosomatis`
-  MODIFY `id_konten` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_konten` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `penanganan_ringan`
@@ -226,29 +246,19 @@ ALTER TABLE `penanganan_sedang`
 -- AUTO_INCREMENT untuk tabel `tenaga_medis`
 --
 ALTER TABLE `tenaga_medis`
-  MODIFY `id_medis` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_medis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `tes`
 --
 ALTER TABLE `tes`
-  MODIFY `id_tes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_tes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
---
-
---
--- Ketidakleluasaan untuk tabel `tes`
---
-ALTER TABLE `tes`
-  ADD CONSTRAINT `tes_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`);
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

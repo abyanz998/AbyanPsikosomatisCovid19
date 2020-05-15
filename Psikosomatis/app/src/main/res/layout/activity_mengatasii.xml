@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/mengatasi"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-250dp"
+            android:layout_marginLeft="220dp"
+            app:cardBackgroundColor="#448985"
+            app:cardCornerRadius="30dp">
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="-20dp"
+            app:cardBackgroundColor="#448985"
+            app:cardCornerRadius="30dp">
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#448985"
+            android:textStyle="bold"
+            android:text="CARA MENGATASI :"
+            android:textSize="24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#448985"
+            android:textStyle="bold"
+            android:text="1. Psikoterapi, dengan metode terapi kognitif perilaku"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#448985"
+            android:textStyle="bold"
+            android:text="2. Latihan relaksasi / meditasi"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#448985"
+            android:textStyle="bold"
+            android:text="3. Akupuntur"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#448985"
+            android:textStyle="bold"
+            android:text="4. Hipnosis / hipnoterapi"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#448985"
+            android:textStyle="bold"
+            android:text="5. Teknik pengalihan"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#448985"
+            android:textStyle="bold"
+            android:text="6. Terapi listrik"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#448985"
+            android:textStyle="bold"
+            android:text="7. Fisioterapi"/>
+    </LinearLayout>
+</LinearLayout>

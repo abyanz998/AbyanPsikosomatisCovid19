@@ -16,6 +16,7 @@ class Information1 : AppCompatActivity() {
         balik.setOnClickListener {
             val intent = Intent(context, Information2::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }

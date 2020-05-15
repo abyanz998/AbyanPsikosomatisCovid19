@@ -15,12 +15,5 @@ while($row = mysqli_fetch_array($query)){
 ));
 }
 
-if ($query) {
-  echo "MANTAP";
-} else {
-  // kalau gagal tampilkan pesan
-  die("Gagal menyimpan perubahan");
-}
-
 echo json_encode(array("result" => $result));
 ?>
