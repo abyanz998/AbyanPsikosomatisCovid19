@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/login"
+    android:background="#FFFFFF"
     tools:context=".SignUp">
 
     <LinearLayout
@@ -15,91 +15,162 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="250dp"
-        android:text="Sign Up"
-        android:textSize="30dp"
-        android:textColor="#000"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="230dp"
-        android:text="to Create"
-        android:textSize="30dp"
-        android:textColor="#000"/>
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="260dp"
+        android:text="Daftar"
+        android:fontFamily="@font/fredoka_one"
+        android:textSize="33dp"
+        android:textStyle="bold"
+        android:textColor="#448985"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="170dp"
-            android:text="Your Account"
-            android:textSize="30dp"
-            android:textColor="#000"/>
+            android:layout_marginLeft="260dp"
+            android:text="Akun"
+            android:fontFamily="@font/fredoka_one"
+            android:textSize="33dp"
+            android:textStyle="bold"
+            android:textColor="#448985"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="100dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your Name"
-            android:textSize="20dp"
-            android:textColor="#000"/>
-        <EditText
-            android:id="@+id/editTextName"
-            android:layout_width="260dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_horizontal"
-            android:background="#fff"
-            android:hint="Name"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email"
-            android:textSize="20dp"
-            android:textColor="#000"
-            android:layout_marginTop="20dp"/>
-        <EditText
-            android:id="@+id/editTextEmail"
-            android:layout_width="260dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_horizontal"
-            android:background="#fff"
-            android:hint="Email"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Password"
-            android:textSize="20dp"
-            android:textColor="#000"
-            android:layout_marginTop="20dp"/>
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_width="260dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_horizontal"
-            android:background="#fff"
-            android:hint="Password"/>
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:src="@drawable/signup"
+        android:layout_marginTop="-180dp"
+        android:layout_marginLeft="-40dp"/>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            app:cardCornerRadius="10dp"
-            android:layout_marginTop="50dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="-5dp"
+        app:cardBackgroundColor="#448985"
+        app:cardCornerRadius="15dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp">
             <TextView
-                android:id="@+id/btn_start"
-                android:clickable="true"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Sign Up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Daftar"
+                android:fontFamily="@font/fredoka_one"
+                android:textSize="29dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:fontFamily="@font/fredoka_one"
                 android:textSize="20dp"
-                android:textColor="#000"
-                android:gravity="center"/>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
+                android:textColor="#FFFFFF"/>
+            <EditText
+                android:id="@+id/editTextNama"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="19dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#fff"
+                android:hint="contoh : Aura Salsabila"
+                android:inputType="text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Username"
+                android:textSize="19dp"
+                android:textColor="#FFFFFF"/>
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#fff"
+                android:inputType="text"
+                android:hint="contoh : aura20"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Password"
+                android:textSize="19dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="textPassword"
+                    android:background="#fff"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/checkbox_agree"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fredoka_one"
+                android:onClick="onCheckboxClicked"
+                android:text="Saya telah membaca dan menyetujui semua"
+                android:textColor="#FFFFFF" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="syarat dan ketentuan"
+                android:textSize="16dp"
+                android:textColor="#03A9F4"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="kebijakan privasi"
+                android:textColor="#03A9F4"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                android:text="DAFTAR"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                />
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                app:cardCornerRadius="10dp"-->
+<!--                android:layout_marginTop="20dp">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/btn_signup"-->
+<!--                    android:clickable="true"-->
+<!--                    android:enabled="false"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:text="Daftar"-->
+<!--                    android:fontFamily="@font/fredoka_one"-->
+<!--                    android:textSize="19dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#448985"-->
+<!--                    android:gravity="center"/>-->
+<!--            </androidx.cardview.widget.CardView>-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
